@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PortfolioComponent } from './components/portfolio.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [PortfolioComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio-frontend';
+  title = 'Portfolio';
 }
+
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'app-root',
+//   standalone: true,
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.css']
+// })
+// export class AppComponent {
+//   title = 'Portfolio';
+// }

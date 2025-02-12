@@ -1,0 +1,20 @@
+<div class="experience-container">
+  <div *ngFor="let exp of experiences; let i = index" class="experience-item">
+    <div class="experience-header" (click)="toggleDetails(i)">
+      <div class="title-row">
+        <p class="job-title"><strong>{{ exp.role }}</strong></p>
+      </div>
+      <div class="company-row">
+        <p class="company-name">{{ exp.company }}</p>
+        <p class="job-period">{{ exp.period }}</p>
+      </div>
+    </div>
+    <div class="details" *ngIf="expandedIndex === i">
+      <div class="details-content">
+        <ul>
+          <li *ngFor="let detail of exp.details">{{ detail }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

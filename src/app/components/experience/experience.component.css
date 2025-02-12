@@ -1,0 +1,74 @@
+.experience-container {
+  font-family: 'Georgia', 'Helvetica', sans-serif; /* Updated font stack */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.experience-header:hover {
+  background-color: #e1eff0;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px; /* Reduced space between title and company details */
+}
+
+.job-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.company-name,
+.job-period {
+  font-size: 1rem;
+  color: #555;
+  font-weight: normal;
+  margin: 0;
+}
+
+.job-period {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.details {
+  padding: 10px 15px;
+  background-color: #e1fffa;
+  border-top: 1px solid #ddd;
+}
+
+.details-content p {
+  margin: 3px 0; /* Reduced space between experience details */
+  font-size: 0.9rem;
+  color: #444444;
+}
