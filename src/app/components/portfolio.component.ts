@@ -73,7 +73,7 @@ export class PortfolioComponent implements OnInit {
 
   // Resume Methods
   viewResume() {
-    window.open('assets/Resume_SD1.pdf', '_blank');
+    window.open('assets/Resume_Portfolio.pdf', '_blank');
   }
 
   downloadResume() {

@@ -1,28 +1,24 @@
-/* 🌎 Global Page Styling */
 @import url('https://fonts.googleapis.com/css2?family=Helvetica+Now:wght@300;400;700&display=swap');
-/* Import Font Awesome CSS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-/* Import Font Awesome CSS */
-/* @import url('../node_modules/@fortawesome/fontawesome-free/css/all.min.css'); */
+
 
 body {
-  font-family: 'Georgia', 'Helvetica', serif; /* Updated font stack */
+  font-family: 'Georgia', 'Helvetica', serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #f0f8ff, #e0f7fa);
   color: #2c3e50;
 }
 
-/* 🖥️ Main Container */
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 0px auto;
   color: #2c3e50;
   background: rgb(192, 246, 255);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
@@ -31,7 +27,6 @@ body {
   transform: scale(1.02);
 }
 
-/* 🎭 Sidebar */
 .sidebar {
   background: linear-gradient(135deg, #aaeeee, #026786);
   color: #000;
@@ -49,7 +44,7 @@ body {
 .sidebar h1 {
   font-size: 2.2rem;
   margin: 15px 0;
-  font-weight: bold; /* Bold for the sidebar title */
+  font-weight: bold;
 }
 
 .sidebar p {
@@ -60,14 +55,13 @@ body {
 .sidebar a {
   color: #010a11;
   text-decoration: none;
-  font-weight: bold; /* Bold for links */
+  font-weight: bold;
 }
 
 .sidebar a:hover {
   text-decoration: underline;
 }
 
-/* ✅ Global Button Styling (Applied to All Buttons) */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -77,7 +71,7 @@ body {
   min-width: 160px;
   padding: 14px 24px;
   font-size: 1rem;
-  font-weight: bold; /* Bold for buttons */
+  font-weight: bold;
   border: none;
   border-radius: 25px;
   background: linear-gradient(to right, #c0e5e6, #0febe0);
@@ -85,7 +79,7 @@ body {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Added margin to create space between buttons */
+  margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -98,22 +92,19 @@ body {
   transform: scale(0.95);
 }
 
-/* 🟢 Buttons Wrapper (Increased Spacing Between Buttons) */
 .btn-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 34px;  /* 🔥 Increased Spacing */
+  gap: 34px;
   margin-top: 30px;
 }
 
-/* 🟠 Social & Resume Buttons */
 .sidebar .btn-group {
   margin-top: 30px;
-  gap: 32px; 
+  gap: 32px;
 }
 
-/* 📌 Sections */
 .section {
   background: #ffffff;
   padding: 24px;
@@ -132,11 +123,9 @@ body {
   border-bottom: 4px solid #38a3a5;
   padding-bottom: 10px;
   margin-bottom: 18px;
-  font-weight: bold; /* Bold for section titles */
+  font-weight: bold;
 }
 
-/* 📊 Skill Progress Bar */
-/* 📊 Skill Progress Bar */
 .skill-container {
   display: flex;
   align-items: center;
@@ -146,14 +135,18 @@ body {
 
 .skill-name {
   font-size: 1rem;
-  font-weight: bold; /* Bold for skill names */
+  font-weight: bold;
+  /* Bold for skill names */
   color: #333;
-  min-width: 120px; /* Set a fixed width for skill names */
-  text-align: left; /* Align text to the left */
+  min-width: 120px;
+  /* Set a fixed width for skill names */
+  text-align: left;
+  /* Align text to the left */
 }
 
 .skill-bar {
-  flex: 1; /* Allow the bar to take available space */
+  flex: 1;
+  /* Allow the bar to take available space */
   height: 6px;
   background: #ddd;
   border-radius: 4px;
@@ -171,7 +164,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px; /* 🔥 Increased Spacing */
+  gap: 24px;
+  /* 🔥 Increased Spacing */
   margin-bottom: 20px;
 }
 
@@ -191,7 +185,8 @@ body {
 
 /* Experience Component Styles */
 .experience-container {
-  font-family: 'Georgia', 'Helvetica', serif; /* Updated font stack */
+  font-family: 'Georgia', 'Helvetica', serif;
+  /* Updated font stack */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -223,14 +218,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3px; /* Reduced space between title and company details */
+  margin-bottom: 3px;
+  /* Reduced space between title and company details */
 }
 
 .job-title {
   font-size: 1.2rem;
   color: #333;
   margin: 0;
-  font-weight: bold; /* Bold for job title */
+  font-weight: bold;
+  /* Bold for job title */
 }
 
 .company-row {
@@ -261,25 +258,118 @@ body {
 }
 
 .details-content p {
-  margin: 3px 0; /* Reduced space between experience details */
+  margin: 3px 0;
+  /* Reduced space between experience details */
   font-size: 0.9rem;
   color: #444444;
-  font-style: italic; /* Italic for details */
+  font-style: italic;
+  /* Italic for details */
 }
 
 .certificate-section {
-  margin-bottom: 5px; /* Space between sections */
+  margin-bottom: 5px;
+  /* Space between sections */
 }
 
 .certificate-section .expanded {
-  background-color: #e1fffa; /* Light background for expanded section */
-  border: 1px solid #2e9496; /* Border to define the group */
+  background-color: #e1fffa;
+  /* Light background for expanded section */
+  border: 1px solid #2e9496;
+  /* Border to define the group */
   color: #0d4142;
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px; /* Padding around the expanded content */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 10px;
+  /* Padding around the expanded content */
 }
 
 .certificate-section .expanded ul {
-  margin: 0; /* Remove margin for the list */
-  padding: 0; /* Remove padding for the list */
+  margin: 0;
+  /* Remove margin for the list */
+  padding: 0;
+  /* Remove padding for the list */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    /* Stack sidebar and main content */
+    margin: 20px;
+    /* Reduce margin on smaller screens */
+  }
+
+  .sidebar {
+    padding: 30px 15px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .sidebar h1 {
+    font-size: 1.8rem;
+    /* Smaller font size for the title */
+  }
+
+  .sidebar p {
+    font-size: 1rem;
+    /* Smaller font size for text */
+  }
+
+  .btn {
+    min-width: 120px;
+    /* Adjust button width */
+    padding: 10px 16px;
+    /* Adjust button padding */
+    font-size: 0.9rem;
+    /* Smaller font size for buttons */
+  }
+
+  .section {
+    padding: 16px;
+    /* Adjust padding for sections */
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+    /* Smaller font size for section titles */
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+    /* Smaller font size for skill names */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 20px 10px;
+    /* Further adjust padding for very small screens */
+  }
+
+  .sidebar h1 {
+    font-size: 1.6rem;
+    /* Further reduce title size */
+  }
+
+  .sidebar p {
+    font-size: 0.9rem;
+    /* Further reduce text size */
+  }
+
+  .btn {
+    min-width: 100px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .section {
+    padding: 12px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .skill-name {
+    font-size: 0.8rem;
+  }
 }
