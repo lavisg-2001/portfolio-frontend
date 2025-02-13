@@ -51,7 +51,7 @@ export class PortfolioComponent implements OnInit {
 
   // Internship Certificates
   internshipCertificates = [
-    { name: 'Infometh Solutions Pvt. Ltd.', file: 'Infometh Internship.pdf' },
+    { name: 'Infometh Solutions Pvt. Ltd.', file: 'InfomethInternship_.pdf' },
     { name: 'Shaurya Technosoft Pvt. Ltd.', file: 'Shaurya Internship.pdf' }
   ];
 
