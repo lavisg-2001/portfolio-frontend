@@ -1,11 +1,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 body {
-  font-family: 'Helvetica Now', Georgia, serif; /* Updated font stack */
+  font-family: 'Helvetica Now', Arial, sans-serif, serif; 
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f0f8ff, #e0f7fa);
-  color: #2c3e50;
+  background: #f9f9f9; /* Light gray background */
+  color: #333; /* Darker text color for better readability */
 }
 
 .container {
@@ -13,9 +13,8 @@ body {
   grid-template-columns: 1fr 3fr;
   max-width: 1200px;
   margin: 0px auto;
-  color: #2c3e50;
-  background: rgb(192, 246, 255);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  background: #ffffff; /* White background for the container */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -26,8 +25,8 @@ body {
 }
 
 .sidebar {
-  background: linear-gradient(135deg, #aaeeee, #026786);
-  color: #000;
+  background: #d0d0d0; /* Very light gray background */
+  color: #000; /* Black text */
   padding: 50px 25px;
   text-align: center;
 }
@@ -51,7 +50,7 @@ body {
 }
 
 .sidebar a {
-  color: #010a11;
+  color: #3f3e3e; /* Dark gray link color */
   text-decoration: none;
   font-weight: bold;
 }
@@ -72,8 +71,8 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(to right, #c0e5e6, #0febe0);
-  color: rgb(5, 26, 54);
+  background: #fafafa; /* Light gray background */
+  color: #494949; /* Black text color */
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -81,7 +80,7 @@ body {
 }
 
 .btn:hover {
-  background: linear-gradient(to right, #4bce95, #3d8385);
+  background: #eeeeee; /* Slightly darker gray on hover */
   transform: scale(1.05);
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
 }
@@ -104,7 +103,7 @@ body {
 }
 
 .section {
-  background: #ffffff;
+  background: #ffffff; /* White background for sections */
   padding: 24px;
   border-radius: 10px;
   margin-bottom: 24px;
@@ -117,8 +116,8 @@ body {
 }
 
 .section h2 {
-  color: #22577a;
-  border-bottom: 4px solid #38a3a5;
+  color: #333; /* Darker color for section headings */
+  border-bottom: 4px solid #ccc; /* Subtle border color */
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -134,45 +133,39 @@ body {
 .skill-name {
   font-size: 1rem;
   font-weight: bold;
-  /* Bold for skill names */
-  color: #333;
-  min-width: 120px;
-  /* Set a fixed width for skill names */
-  text-align: left;
-  /* Align text to the left */
+  color: #333; /* Darker skill name color */
+  min-width: 120px; /* Set a fixed width for skill names */
+  text-align: left; /* Align text to the left */
 }
 
 .skill-bar {
-  flex: 1;
-  /* Allow the bar to take available space */
+  flex: 1; /* Allow the bar to take available space */
   height: 6px;
-  background: #ddd;
+  background: #ddd; /* Light gray background for skill bars */
   border-radius: 4px;
   overflow: hidden;
 }
 
 .skill-fill {
   height: 100%;
-  background: linear-gradient(to right, #80e8f0, #569792);
+  background: #6e6e6e; /* Dark gray for skill fill */
   transition: width 0.5s ease-in-out;
 }
-
 /* 🔻 Dropdown Buttons (Now Using `.btn-group`) */
 .dropdown-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  /* 🔥 Increased Spacing */
+  gap: 24px; /* Increased spacing */
   margin-bottom: 20px;
 }
 
 .dropdown-container select {
   padding: 12px;
   font-size: 1rem;
-  border: 2px solid #38a3a5;
+  border: 2px solid #ccc; /* Subtle border color */
   border-radius: 5px;
-  background: #fff;
+  background: #fff; /* White background */
   cursor: pointer;
   width: 250px;
 }
@@ -183,14 +176,13 @@ body {
 
 /* Experience Component Styles */
 .experience-container {
-  font-family: 'Georgia', 'Helvetica', serif;
-  /* Updated font stack */
+  font-family: 'Georgia', 'Helvetica', serif; /* Updated font stack */
   max-width: 800px;
   margin: 0 auto;
 }
 
 .experience-item {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd; /* Subtle border */
   border-radius: 8px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -203,29 +195,27 @@ body {
 
 .experience-header {
   padding: 10px 15px;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light background for header */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .experience-header:hover {
-  background-color: #e1eff0;
+  background-color: #e1eff0; /* Slightly darker on hover */
 }
 
 .title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3px;
-  /* Reduced space between title and company details */
+  margin-bottom: 3px; /* Reduced space between title and company details */
 }
 
 .job-title {
   font-size: 1.2rem;
-  color: #333;
+  color: #333; /* Darker job title color */
   margin: 0;
-  font-weight: bold;
-  /* Bold for job title */
+  font-weight: bold; /* Bold for job title */
 }
 
 .company-row {
@@ -239,7 +229,7 @@ body {
 .company-name,
 .job-period {
   font-size: 1rem;
-  color: #555;
+  color: #555; /* Darker color for company name and job period */
   font-weight: normal;
   margin: 0;
 }
@@ -251,123 +241,100 @@ body {
 
 .details {
   padding: 10px 15px;
-  background-color: #e1fffa;
-  border-top: 1px solid #ddd;
+  background-color: #f0f0f0; /* Light gray background for details */
+  border-top: 1px solid #ddd; /* Subtle border */
 }
 
 .details-content p {
-  margin: 3px 0;
-  /* Reduced space between experience details */
+  margin: 3px 0; /* Reduced space between experience details */
   font-size: 0.9rem;
-  color: #444444;
-  font-style: italic;
-  /* Italic for details */
+  color: #444444; /* Darker color for details */
+  font-style: italic; /* Italic for details */
 }
 
 .certificate-section {
-  margin-bottom: 5px;
-  /* Space between sections */
+  margin-bottom: 5px; /* Space between sections */
 }
 
 .certificate-section .expanded {
-  background-color: #e1fffa;
-  /* Light background for expanded section */
-  border: 1px solid #2e9496;
-  /* Border to define the group */
-  color: #0d4142;
-  border-radius: 8px;
-  /* Rounded corners */
-  padding: 10px;
-  /* Padding around the expanded content */
+  background-color: #e6e6e6; /* White background for expanded section */
+  border: 1px solid #8b8b8b; /* Subtle border to define the group */
+  color: #888888; /* Darker color for text */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding around the expanded content */
 }
 
 .certificate-section .expanded ul {
-  margin: 0;
-  /* Remove margin for the list */
-  padding: 0;
-  /* Remove padding for the list */
+  margin: 0; /* Remove margin for the list */
+  padding: 0; /* Remove padding for the list */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr;
-    /* Stack sidebar and main content */
-    margin: 20px;
-    /* Reduce margin on smaller screens */
+    grid-template-columns: 1fr; /* Stack sidebar and main content */
+    margin: 20px; /* Reduce margin on smaller screens */
   }
 
   .sidebar {
-    padding: 30px 15px;
-    /* Adjust padding for smaller screens */
+    padding: 30px 15px; /* Adjust padding for smaller screens */
   }
 
   .sidebar h1 {
-    font-size: 1.8rem;
-    /* Smaller font size for the title */
+    font-size: 1.8rem; /* Smaller font size for the title */
   }
 
   .sidebar p {
-    font-size: 1rem;
-    /* Smaller font size for text */
+    font-size: 1rem; /* Smaller font size for text */
   }
 
   .btn {
-    min-width: 120px;
-    /* Adjust button width */
-    padding: 10px 16px;
-    /* Adjust button padding */
-    font-size: 0.9rem;
-    /* Smaller font size for buttons */
+    min-width: 120px; /* Adjust button width */
+    padding: 10px 16px; /* Adjust button padding */
+    font-size: 0.9rem; /* Smaller font size for buttons */
   }
 
   .section {
-    padding: 16px;
-    /* Adjust padding for sections */
+    padding: 16px; /* Adjust padding for sections */
   }
 
   .section h2 {
-    font-size: 1.5rem;
-    /* Smaller font size for section titles */
+    font-size: 1.5rem; /* Smaller font size for section titles */
   }
 
   .skill-name {
-    font-size: 0.9rem;
-    /* Smaller font size for skill names */
+    font-size: 0.9rem; /* Smaller font size for skill names */
   }
 }
 
 @media (max-width: 480px) {
   .sidebar {
-    padding: 20px 10px;
-    /* Further adjust padding for very small screens */
+    padding: 20px 10px; /* Further adjust padding for very small screens */
   }
 
   .sidebar h1 {
-    font-size: 1.6rem;
-    /* Further reduce title size */
+    font-size: 1.6rem; /* Further reduce title size */
   }
 
   .sidebar p {
-    font-size: 0.9rem;
-    /* Further reduce text size */
+    font-size: 0.9rem; /* Further reduce text size */
   }
 
   .btn {
-    min-width: 100px;
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    min-width: 100px; /* Adjust button width */
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 0.8rem; /* Smaller font size for buttons */
   }
 
   .section {
-    padding: 12px;
+    padding: 12px; /* Adjust padding for sections */
   }
 
   .section h2 {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Smaller font size for section titles */
   }
 
   .skill-name {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Smaller font size for skill names */
   }
 }
