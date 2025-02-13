@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  constructor(private http: HttpClient) {} // ✅ Inject HttpClient
+
+  // constructor(private http: HttpClient) {} // ✅ Inject HttpClient
 }
 
   // private apiUrl = 'http://localhost:3000/api'; // Update as needed

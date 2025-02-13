@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
 import { CommonModule } from '@angular/common'; 
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ExperienceComponent } from '../components/experience/experience.component';
 
 @Component({
-  selector: 'app-portfolio',
-  standalone: true, 
-  imports: [CommonModule, HttpClientModule, FormsModule, ExperienceComponent],
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css'],
-  providers: [PortfolioService] 
+    selector: 'app-portfolio',
+    imports: [CommonModule, FormsModule, ExperienceComponent],
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.css'],
+    providers: [PortfolioService]
 })
 export class PortfolioComponent implements OnInit {
 

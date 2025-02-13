@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  standalone: true, // ✅ Mark as standalone
-  imports: [CommonModule],
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+    imports: [CommonModule],
+    selector: 'app-experience',
+    templateUrl: './experience.component.html',
+    styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
   expandedIndex: number | null = null;
