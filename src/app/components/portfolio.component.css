@@ -1,113 +1,179 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 body {
-  font-family: 'Helvetica Now', Arial, sans-serif, serif; 
+  font-family: Georgia, Arial, sans-serif, serif; 
   margin: 0;
   padding: 0;
-  background: #f9f9f9; /* Light gray background */
-  color: #333; /* Darker text color for better readability */
+  background: #f4f4f4; /* Light gray background */
+  color: #444; /* Darker text color for better readability */
+}
+
+.profile-pic {
+  width: 250px; /* Increased size */
+  height: 250px; /* Increased size */
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto; /* Centers the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  max-width: 1200px;
-  margin: 0px auto;
+  font-family: Georgia, Arial, sans-serif, serif; 
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  width: 100%; /* Set width to 100% to fill the viewport */
+  height: auto; /* Optional: Set height to auto */
+  margin: 0; /* Remove margin */
   background: #ffffff; /* White background for the container */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
 }
 
-.container:hover {
-  transform: scale(1.02);
+.top-nav {
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Center items vertically */
+  padding: 15px 30px; /* Padding for the navigation bar */
+  background-color: #ffffff; /* Light background for the nav bar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav-left {
+  display: flex; /* Use flexbox for navigation links */
+  gap: 20px; /* Space between navigation links */
+}
+
+.nav-left a {
+  color: #070a0e; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+
+.nav-right {
+   font-family: Georgia, Arial, sans-serif, serif; 
+  display: flex; /* Use flexbox for right section */
+  align-items: center; /* Center items vertically */
+  gap: 15px; /* Space between buttons and icons */
+  text-align: justify;
+}
+
+.nav-right .fab.fa-linkedin {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.nav-right .resume-link {
+  color: #070a0e; /* Link color for resume text */
+  text-decoration: underline; /* Underline to indicate it's clickable */
+  font-weight: bold; /* Bold text */
+  font-size: 1.1rem;
+}
+
+.nav-right .resume-link:hover {
+  text-decoration: none; /* Remove underline on hover */
 }
 
 .sidebar {
-  background: #d0d0d0; /* Very light gray background */
-  color: #000; /* Black text */
-  padding: 50px 25px;
+  font-family: Georgia, Arial, sans-serif, serif; 
+  background: #e6f7ff; /* Light gray background */
+  color: #000000; /* Dark text */
+  padding: 40px; /* Adjust padding */
+  width: 100%; /* Set a fixed width for the sidebar */
   text-align: center;
 }
-
-.sidebar img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
+.sidebar h1 {
+  font-size: 2.2rem; /* Set a larger font size for the h1 */
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-.sidebar h1 {
-  font-size: 2.2rem;
-  margin: 15px 0;
-  font-weight: bold;
+.sidebar h2 {
+  font-size: 1.5rem; 
+  margin: 5px 0; /* Adjust margin as needed */
+  font-weight: normal; /* Normal weight for h2 */
 }
 
 .sidebar p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  font-size: 1.2rem; 
+  margin: 5px 0; /* Adjust margin as needed */
+  font-weight: normal; /* Normal weight for h2 */
+  font-style: italic;
 }
 
-.sidebar a {
-  color: #3f3e3e; /* Dark gray link color */
-  text-decoration: none;
+.main-content {
+   font-family: Georgia, Arial, sans-serif, serif; 
+  flex: 1; /* Allow main content to take the remaining space */
+  padding: 20px; /* Add padding to main content */
+  background: #f4f4f4; /* Light gray background for main content */
+}
+
+/* Ensure sections are identifiable */
+.documents-container {
+  display: flex; /* Use flexbox to arrange sections side by side */
+  justify-content: space-between; /* Space between sections */
+  gap: 20px; /* Optional: Space between the two sections */
+}
+
+.courses, .internship {
+   font-family: Georgia, Arial, sans-serif, serif; 
+  flex: 1; /* Allow sections to grow equally */
+  background: #ffffff; /* White background for sections */
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.courses h2, .internship h2 {
+   font-family: Georgia, Arial, sans-serif, serif; 
+  color: #333; /* Darker color for section headings */
+  border-bottom: 4px solid #007bff; /* Primary color for border */
+  padding-bottom: 10px;
+  margin-bottom: 18px;
   font-weight: bold;
 }
 
-.sidebar a:hover {
-  text-decoration: underline;
+.courses:hover {
+  transform: scale(1.02);
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  width: auto;
-  min-width: 160px;
-  padding: 14px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  background: #fafafa; /* Light gray background */
-  color: #494949; /* Black text color */
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+.internship:hover {
+  transform: scale(1.02);
+}
+.document-item {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; 
+    /* Space between each document item */
 }
 
-.btn:hover {
-  background: #eeeeee; /* Slightly darker gray on hover */
-  transform: scale(1.05);
-  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+.document-link {
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  color: #070a0e; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin-left: 5px; /* Space between icon and text */
 }
 
-.btn:active {
-  transform: scale(0.95);
+.document-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
-.btn-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 34px;
-  margin-top: 30px;
+.fa-eye {
+  color: #007bff; /* Color for the eye icon */
 }
 
-.sidebar .btn-group {
-  margin-top: 30px;
-  gap: 32px;
-}
-
+/* Ensure sections are identifiable */
 .section {
+   font-family: Georgia, Arial, sans-serif, serif; 
   background: #ffffff; /* White background for sections */
   padding: 24px;
   border-radius: 10px;
   margin-bottom: 24px;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -117,24 +183,24 @@ body {
 
 .section h2 {
   color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid #ccc; /* Subtle border color */
+  border-bottom: 4px solid #007bff; /* Primary color for border */
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
 }
 
+/* Skill Container */
 .skill-container {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space between each skill */
 }
 
 .skill-name {
   font-size: 1rem;
   font-weight: bold;
   color: #333; /* Darker skill name color */
-  min-width: 120px; /* Set a fixed width for skill names */
+  width: 150px; /* Set a fixed width for skill names */
   text-align: left; /* Align text to the left */
 }
 
@@ -144,19 +210,21 @@ body {
   background: #ddd; /* Light gray background for skill bars */
   border-radius: 4px;
   overflow: hidden;
+  margin-left: 10px; /* Space between skill name and bar */
 }
 
 .skill-fill {
   height: 100%;
-  background: #6e6e6e; /* Dark gray for skill fill */
+  background: #7ba5ff; /* Color for skill fill */
   transition: width 0.5s ease-in-out;
 }
-/* 🔻 Dropdown Buttons (Now Using `.btn-group`) */
+
+/* Dropdown Buttons */
 .dropdown-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px; /* Increased spacing */
+  gap: 24px;  
   margin-bottom: 20px;
 }
 
@@ -165,13 +233,16 @@ body {
   font-size: 1rem;
   border: 2px solid #ccc; /* Subtle border color */
   border-radius: 5px;
-  background: #fff; /* White background */
+  background-color: #1d2f55;
   cursor: pointer;
   width: 250px;
+  margin-bottom: 20px;
 }
 
 .dropdown-container select:focus {
   outline: none;
+  background-color: #7ba5ff;
+  border-color: #15375a; /* Change border color on focus */
 }
 
 /* Experience Component Styles */
@@ -182,7 +253,7 @@ body {
 }
 
 .experience-item {
-  border: 1px solid #dddddd; /* Subtle border */
+  border: 1px solid #2d8e99; /* Subtle border */
   border-radius: 8px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -236,7 +307,7 @@ body {
 
 .job-period {
   text-align: right;
-  flex-shrink: 0;
+  flex-shrink:  0;
 }
 
 .details {
@@ -257,11 +328,12 @@ body {
 }
 
 .certificate-section .expanded {
-  background-color: #e6e6e6; /* White background for expanded section */
-  border: 1px solid #8b8b8b; /* Subtle border to define the group */
+  background-color: #cef1ff; 
+  border: 1px solid #6dddff; /* Subtle border to define the group */
   color: #888888; /* Darker color for text */
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
   padding: 10px; /* Padding around the expanded content */
+  margin-bottom: 20px;
 }
 
 .certificate-section .expanded ul {
@@ -271,39 +343,48 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr; /* Stack sidebar and main content */
-    margin: 20px; /* Reduce margin on smaller screens */
+  .top-nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
   }
 
-  .sidebar {
-    padding: 30px 15px; /* Adjust padding for smaller screens */
+  .nav-left {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px; /* Space between links */
   }
 
-  .sidebar h1 {
-    font-size: 1.8rem; /* Smaller font size for the title */
-  }
-
-  .sidebar p {
-    font-size: 1rem; /* Smaller font size for text */
-  }
-
-  .btn {
-    min-width: 120px; /* Adjust button width */
-    padding: 10px 16px; /* Adjust button padding */
-    font-size: 0.9rem; /* Smaller font size for buttons */
+  .nav-right {
+    flex-direction: column; /* Stack buttons and icons vertically */
+    gap: 10px; /* Space between buttons and icons */
   }
 
   .section {
-    padding: 16px; /* Adjust padding for sections */
+    background: #ffffff; /* White background for sections */
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
-
+  
+  .section:hover {
+    transform: scale(1.02);
+  }
+  
   .section h2 {
-    font-size: 1.5rem; /* Smaller font size for section titles */
+    color: #333; /* Darker color for section headings */
+    border-bottom: 4px solid #007bff; /* Primary color for border */
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    font-weight: bold;
   }
 
-  .skill-name {
-    font-size: 0.9rem; /* Smaller font size for skill names */
+  .main-content {
+    padding: 10px; /* Adjust padding for main content */
+  }
+
+  .documents-container {
+    flex-direction: column; /* Stack documents vertically on smaller screens */
   }
 }
 
@@ -336,5 +417,38 @@ body {
 
   .skill-name {
     font-size: 0.8rem; /* Smaller font size for skill names */
+  }
+}
+
+/* @media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .nav-left, .nav-right {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+} */
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start;
+  }
+
+  .nav-left {
+    flex: 1; /* Allow nav-left to take available space */
+    text-align: left; 
+  }
+
+  .nav-right {
+    flex: 1; /* Allow nav-right to take available space */
+    text-align: right; 
+  }
+
+  .nav-left, .nav-right {
+    margin-bottom: 0; /* Remove margin between nav sections */
   }
 }

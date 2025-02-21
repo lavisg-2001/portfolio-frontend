@@ -24,8 +24,7 @@ export class PortfolioComponent implements OnInit {
     { name: 'Spring Boot', level: 7 },
     { name: 'Kafka', level: 7 },
     { name: 'SQL & MongoDB', level: 7 },
-    { name: 'Docker & CI/CD', level: 5 },
-    { name: 'Angular', level: 5 }
+    { name: 'HTML, CSS & Angular', level: 6 }
   ];
 
   // Course Certificates
@@ -80,5 +79,12 @@ export class PortfolioComponent implements OnInit {
     anchor.href = resumeUrl;
     anchor.download = 'Lavanya_Gollapelli_Resume.pdf';
     anchor.click();
+  }
+
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

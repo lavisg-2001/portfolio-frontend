@@ -1,11 +1,11 @@
 .experience-container {
   font-family: 'Arial', 'Helvetica', sans-serif; 
-  max-width: 800px;
   margin: 0 auto;
 }
 
 .experience-item {
-  border: 1px solid #ddd; /* Light gray border */
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: #f9f9f9; /* Very light gray background */
   border-radius: 8px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -18,13 +18,13 @@
 
 .experience-header {
   padding: 10px 15px;
-  background-color: #f9f9f9; /* Very light gray background */
+  background-color: #ffffff; /* White background */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .experience-header:hover {
-  background-color: #e0e0e0; /* Slightly darker gray on hover */
+  background-color: #f0f0f0; /* Light gray on hover */
 }
 
 .title-row {
@@ -51,7 +51,7 @@
 .company-name,
 .job-period {
   font-size: 1rem;
-  color: #555; /* Dark gray for company name and job period */
+  color: #666; /* Medium gray for company name and job period */
   font-weight: normal;
   margin: 0;
 }
@@ -63,7 +63,7 @@
 
 .details {
   padding: 10px 15px;
-  background-color: #f0f0f0; /* Light gray background for details */
+  background-color: #f7f7f7; /* Very light gray background for details */
   border-top: 1px solid #ddd; /* Subtle border */
 }
 
