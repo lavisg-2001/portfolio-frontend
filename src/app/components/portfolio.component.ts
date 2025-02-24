@@ -13,8 +13,6 @@ import { ExperienceComponent } from '../components/experience/experience.compone
 })
 export class PortfolioComponent implements OnInit {
 
-  isNavOpen = true;
-
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit() {}
@@ -89,9 +87,5 @@ export class PortfolioComponent implements OnInit {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }  
-  
-  toggleNav() {
-    this.isNavOpen = !this.isNavOpen; // Add this method
-  }
 
 }

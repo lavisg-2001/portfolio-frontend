@@ -4,7 +4,7 @@ body {
   font-family:'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
-  background: #e6fdff;
+  background: #ffffec;
   color: #444; /* Darker text color for better readability */
 }
 
@@ -27,7 +27,7 @@ body {
   margin: 0; /* Remove margin */
   padding: 0;
   /* background: #ffffff;  */
-  background: #e6fdff; 
+  background: #fcffec; 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
   border-radius: 10px;
   overflow: hidden;
@@ -72,12 +72,12 @@ body {
 }
 
 .nav-right {
-  font-family: 'Times New Roman', Times, serif;
   display: flex; /* Use flexbox for right section */
   align-items: center; /* Center items vertically */
   gap: 15px; /* Space between buttons and icons */
   align-content: center;
   text-align: center;
+  font-weight: bold;
   /* text-align: justify; */
 }
 
@@ -85,7 +85,8 @@ body {
   display: flex; /* Make links flex containers */
   align-items: center; /* Center items vertically */
   text-decoration: none; /* Remove underline */
-  color: #070a0e; /* Link color */
+  color:  #004186; /* Link color */
+  font-size: 1.1rem;
 }
 
 .nav-right a i {
@@ -95,8 +96,8 @@ body {
 
 .sidebar {
   font-family: 'Times New Roman', Times, serif;
-  background: #e6fdff; /* Light gray background */
-  color: #000000; /* Dark text */
+  background: #eef7ff; /* Light gray background */
+  color: #000e24; /* Dark text */
   padding: 40px; /* Adjust padding */
   width: 100%; /* Set a fixed width for the sidebar */
   text-align: center;
@@ -109,7 +110,7 @@ body {
  font-family: 'Times New Roman', Times, serif;
  flex: 1; /* Allow main content to take the remaining space */
  padding: 20px; /* Add padding to main content */
- background: #e6fdff;; /* Light gray background for main content */
+ background: #eef7ff; /* Light gray background for main content */
 }
 /* Ensure sections are identifiable */
 .section {
@@ -128,7 +129,7 @@ body {
 
 .section h2 {
   color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid #007bff; /* Primary color for border */
+  border-bottom: 4px solid #004186; /* Primary color for border */
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -176,7 +177,7 @@ body {
 .courses h2, .internship h2 {
    font-family: 'Times New Roman', Times, serif;
   color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid #007bff; /* Primary color for border */
+  border-bottom: 4px solid  #004186; /* Primary color for border */
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -217,7 +218,7 @@ body {
 
 .section h2 {
   color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid #007bff; /* Primary color for border */
+  border-bottom: 4px solid  #004186; /* Primary color for border */
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -241,7 +242,7 @@ body {
 .skill-bar {
   flex: 1; /* Allow the bar to take available space */
   height: 6px;
-  background: #ddd; /* Light gray background for skill bars */
+  background: #dddddd; /* Light gray background for skill bars */
   border-radius: 4px;
   overflow: hidden;
   margin-left: 10px; /* Space between skill name and bar */
@@ -249,7 +250,7 @@ body {
 
 .skill-fill {
   height: 100%;
-  background: #7ba5ff; /* Color for skill fill */
+  background: #2ac2f5; /* Color for skill fill */
   transition: width 0.5s ease-in-out;
 }
 
@@ -258,8 +259,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;  
-  margin-bottom: 20px;
+  gap: 20px;  
+  margin-bottom: 10px;
 }
 
 .dropdown-container select {
