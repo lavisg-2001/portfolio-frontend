@@ -1,11 +1,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 body {
+  display: flex;
   font-family:'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background: #ffffec;
-  color: #444; /* Darker text color for better readability */
+  color: #444; 
 }
 
 .profile-pic {
@@ -21,14 +22,13 @@ body {
 .container {
   font-family:'Times New Roman', Times, serif;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  width: 100%; /* Set width to 100% to fill the viewport */
-  height: auto; /* Optional: Set height to auto */
-  margin: 0; /* Remove margin */
+  flex-direction: column; 
+  width: 100%; 
+  height: auto; 
+  margin: 0; 
   padding: 0;
-  /* background: #ffffff;  */
   background: #fcffec; 
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
   overflow: hidden;
 }
@@ -96,7 +96,7 @@ body {
 
 .sidebar {
   font-family: 'Times New Roman', Times, serif;
-  background: #eef7ff; /* Light gray background */
+  background: linear-gradient(to bottom, #b4f4ff, #eef7ff);
   color: #000e24; /* Dark text */
   padding: 40px; /* Adjust padding */
   width: 100%; /* Set a fixed width for the sidebar */
@@ -176,8 +176,8 @@ body {
 
 .courses h2, .internship h2 {
    font-family: 'Times New Roman', Times, serif;
-  color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid  #004186; /* Primary color for border */
+  color: #000742;  
+  border-bottom: 4px solid #0053a7; 
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -217,8 +217,8 @@ body {
 }
 
 .section h2 {
-  color: #333; /* Darker color for section headings */
-  border-bottom: 4px solid  #004186; /* Primary color for border */
+  color: #000742;
+  border-bottom: 4px solid #0053a7; 
   padding-bottom: 10px;
   margin-bottom: 18px;
   font-weight: bold;
@@ -250,7 +250,7 @@ body {
 
 .skill-fill {
   height: 100%;
-  background: #2ac2f5; /* Color for skill fill */
+  background: #83c1ff; /* Color for skill fill */
   transition: width 0.5s ease-in-out;
 }
 
@@ -378,26 +378,9 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-  .section {
-    background: #ffffff; /* White background for sections */
-    padding: 24px;
-    border-radius: 10px;
-    margin-bottom: 24px;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
   
   .section:hover {
     transform: scale(1.02);
-  }
-  
-  .section h2 {
-    color: #333; /* Darker color for section headings */
-    border-bottom: 4px solid #007bff; /* Primary color for border */
-    padding-bottom: 10px;
-    margin-bottom: 18px;
-    font-weight: bold;
   }
 
   .main-content {

@@ -3,13 +3,32 @@ import { PortfolioService } from '../services/portfolio.service';
 import { CommonModule } from '@angular/common'; 
 import { FormsModule } from '@angular/forms';
 import { ExperienceComponent } from '../components/experience/experience.component';
+import { trigger, transition, style, animate } from '@angular/animations';
+
 
 @Component({
     selector: 'app-portfolio',
     imports: [CommonModule, FormsModule, ExperienceComponent],
     templateUrl: './portfolio.component.html',
     styleUrls: ['./portfolio.component.css'],
-    providers: [PortfolioService]
+    providers: [PortfolioService],
+    animations: [
+      trigger('fadeIn', [
+        transition(':enter', [
+          style({ opacity: 0 }),
+          animate('500ms ease-in', style({ opacity: 1 }))
+        ]),
+        transition(':leave', [
+          animate('500ms ease-out', style({ opacity: 0 }))
+        ])
+      ]),
+      trigger('slideIn', [
+        transition(':enter', [
+          style({ transform: 'translateY(20px)', opacity: 0 }),
+          animate('300ms ease-out', style({ transform: 'translateY(0)', opacity: 1 }))
+        ])
+      ])
+    ]
 })
 export class PortfolioComponent implements OnInit {
 
