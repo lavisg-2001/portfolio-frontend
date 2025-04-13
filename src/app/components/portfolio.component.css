@@ -231,7 +231,7 @@ body {
   justify-content: space-around; /* Space around items */
   overflow-x: auto; /* Enable horizontal scrolling on small screens */
   padding: 10px; /* Add padding around the skills container */
-  margin-bottom: 20px; /* Space below the skills container */
+  margin-bottom: 10px; /* Space below the skills container */
 }
 
 /* Skill Container */
@@ -243,7 +243,7 @@ body {
   padding: 10px; /* Add padding inside each skill container */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
   border-radius: 5px; /* Optional: Add rounded corners */
-  margin: 10px 20px; /* Add margin to the top and bottom, and left and right of each skill container */
+  margin: 5px 2px; /* Add margin to the top and bottom, and left and right of each skill container */
 }
 
 /* Skill Name */
