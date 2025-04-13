@@ -32,20 +32,33 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(private portfolioService: PortfolioService) {}
-
-  ngOnInit() {}
-
   // Skills Data
   skills = [
     { name: 'Java', level: 8 },
     { name: 'Python', level: 6 },
-    { name: 'Spring Boot', level: 7 },
+    { name: 'Spring Boot', level: 8 },
     { name: 'Kafka', level: 7 },
-    { name: 'SQL & MongoDB', level: 7 },
-    { name: 'HTML, CSS & Angular', level: 6 }
+    { name: 'SQL', level: 8 },
+    { name: 'MongoDB', level: 7 },
+    { name: 'HTML & CSS', level: 7 },
+    { name: 'Git/GitHub', level: 8 }
   ];
 
+  firstHalfSkills: any[] = [];
+  secondHalfSkills: any[] = [];
+
+  constructor(private portfolioService: PortfolioService) {}
+
+  ngOnInit() {
+    this.splitSkills(); // Call splitSkills to initialize the skill halves
+  }
+
+  splitSkills() {
+    const midIndex = Math.ceil(this.skills.length / 2);
+    this.firstHalfSkills = this.skills.slice(0, midIndex);
+    this.secondHalfSkills = this.skills.slice(midIndex);
+  }
+  
   // Course Certificates
   courseCertificates = [
     { name: 'IBM SkillsBuild Innovation Camp - Data Analysis', file: 'IBM_SkillsBuild_Innovation_Camp.pdf' },

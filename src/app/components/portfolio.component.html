@@ -5,20 +5,25 @@
       <div class="nav-left">
         <a (click)="scrollToSection('experience')">Experience</a>
         <a (click)="scrollToSection('education')">Education</a>
-        <a (click)="scrollToSection('course-certificates')">Skills</a> 
+        <a (click)="scrollToSection('course-certificates')">Skills</a>
       </div>
-    
+
       <div class="nav-right">
         <a href="mailto:lgollapelli891@gmail.com"><i class="fa fa-envelope"></i></a>
         <a>|</a>
-        <a href="https://www.linkedin.com/in/lavanya-gollapelli-245ab61b8/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/lavanya-gollapelli-245ab61b8/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a>|</a>
+        <a href="https://github.com/lavisg-2001" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a>|</a>
+        <a href="https://leetcode.com/u/lavanya_891sg/" target="_blank" title="LeetCode"><i
+            class="fa fa-code"></i></a>
         <a>|</a>
         <a>Resume -</a>
-        <a (click)="viewResume()" title="View Resume"><i class="fa fa-eye"></i></a>
-        <a (click)="downloadResume()" title="Download Resume"><i class="fa fa-file-download"></i></a>
+          <a (click)="viewResume()" title="View Resume"><i class="fa fa-eye"></i></a>
       </div>
     </div>
-  
+
     <!-- 🌟 Left Sidebar -->
     <aside class="sidebar">
       <section>
@@ -28,14 +33,14 @@
         <p>Passionate about continuous learning and development in the ever-evolving field of software engineering.</p>
       </section>
     </aside>
-  
+
     <!-- 📜 Main Content -->
     <div class="main-content">
       <div class="section" id="experience">
         <h2>💼 Professional Experience</h2>
         <app-experience></app-experience>
       </div>
-  
+
       <div class="section" id="education">
         <h2>🎓 Education</h2>
         <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -45,10 +50,10 @@
         <span style="font-size: 1rem;">Computer Science (Honors in AI)</span>
         <p style="display: flex; justify-content: space-between; align-items: center;">
           <em>Sinhgad Institute of Technology & Science, Pune</em>
-          <span><strong>CGPA :  8.65</strong></span>
+          <span><strong>CGPA : 8.65</strong></span>
         </p>
       </div>
-  
+
       <div class="section">
         <h2>🏆 Key Achievements</h2>
         <ul>
@@ -57,20 +62,32 @@
           <li>Led a team for high-quality data ingestion.</li>
         </ul>
       </div>
-  
+
       <!-- 💪 My Skills -->
-      <div class="section" id="course-certificates" >
+      <div class="section" id="course-certificates">
         <h2>💪 My Skills</h2>
-        <div *ngFor="let skill of skills" class="skill-container">
-          <div class="skill-name">{{ skill.name }}</div>
-          <div class="skill-bar">
-            <div class="skill-fill" [style.width.%]="skill.level * 10"></div>
+        <div class="skills-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+          <div class="skills-half" style="flex: 0 0 48%; margin-right: 2%;">
+            <div *ngFor="let skill of firstHalfSkills" class="skill-container">
+              <div class="skill-name">{{ skill.name }}</div>
+              <div class="skill-bar">
+                <div class="skill-fill" [style.width.%]="skill.level * 10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-half" style="flex: 0 0 48%;">
+            <div *ngFor="let skill of secondHalfSkills" class="skill-container">
+              <div class="skill-name">{{ skill.name }}</div>
+              <div class="skill-bar">
+                <div class="skill-fill" [style.width.%]="skill.level * 10"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  
+
       <div class="documents-container">
-        <div class="courses" >
+        <div class="courses">
           <h2>📜 Courses</h2>
           <div *ngFor="let cert of courseCertificates">
             <div class="document-item">
@@ -81,7 +98,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="internship" id="internship-documents">
           <h2>📜 Internship Documents</h2>
           <ul style="list-style-type: none; padding: 0;">
