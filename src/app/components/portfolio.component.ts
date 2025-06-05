@@ -61,6 +61,7 @@ export class PortfolioComponent implements OnInit {
   
   // Course Certificates
   courseCertificates = [
+    { name: 'Java Spring Framework 6 with Spring Boot 3', file: 'Java_SpringBoot_Udemy.pdf' },
     { name: 'IBM SkillsBuild Innovation Camp - Data Analysis', file: 'IBM_SkillsBuild_Innovation_Camp.pdf' },
     { name: 'Data Visualization with Python', file: 'Data Visualization with Python.pdf' },
     { name: 'Docker for Java Developer', file: 'Docker-Udemy.pdf' },
